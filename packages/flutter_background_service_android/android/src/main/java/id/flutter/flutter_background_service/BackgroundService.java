@@ -190,7 +190,7 @@ public class BackgroundService extends Service implements MethodChannel.MethodCa
         WatchdogReceiver.enqueue(this);
         runService();
 
-        return START_NOT_STICKY;
+        return START_STICKY;
     }
 
     @SuppressLint("WakelockTimeout")
