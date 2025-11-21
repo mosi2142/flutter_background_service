@@ -1,3 +1,11 @@
+## 5.1.1
+
+ - Update a dependency to the latest release.
+
+## 5.1.0
+
+ - **FEAT**: remove unused imports. ([d0bbb433](https://github.com/ekasetiawans/flutter_background_service/commit/d0bbb43312877af51b5403c6fc42dd9ec2a44789))
+
 ## 5.0.10
 
  - Update a dependency to the latest release.

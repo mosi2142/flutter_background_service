@@ -3,6 +3,116 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2025-07-25
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
+ - [`flutter_background_service_android` - `v6.3.1`](#flutter_background_service_android---v631)
+ - [`flutter_background_service` - `v5.1.1`](#flutter_background_service---v511)
+
+Packages with dependency updates only:
+
+> Packages listed below depend on other packages in this workspace that have had changes. Their versions have been incremented to bump the minimum dependency versions of the packages they depend upon in this project.
+
+ - `flutter_background_service` - `v5.1.1`
+
+---
+
+#### `flutter_background_service_android` - `v6.3.1`
+
+ - **FIX**(android): add namespace to support AGP 8.0+. ([76b0c396](https://github.com/ekasetiawans/flutter_background_service/commit/76b0c3960e2e65b5be8c60a2de0b7c0565691769))
+ - **FIX**: manually disabling Alarms & reminders permission on Android 12 causes an exception when starting service on reboot. ([135fed1f](https://github.com/ekasetiawans/flutter_background_service/commit/135fed1f3a49b5c674718a112beb2ca71a19d1b0))
+
+
+## 2025-07-25
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
+ - [`flutter_background_service_android` - `v6.3.1`](#flutter_background_service_android---v631)
+ - [`flutter_background_service` - `v5.1.1`](#flutter_background_service---v511)
+
+Packages with dependency updates only:
+
+> Packages listed below depend on other packages in this workspace that have had changes. Their versions have been incremented to bump the minimum dependency versions of the packages they depend upon in this project.
+
+ - `flutter_background_service` - `v5.1.1`
+
+---
+
+#### `flutter_background_service_android` - `v6.3.1`
+
+ - **FIX**(android): add namespace to support AGP 8.0+. ([76b0c396](https://github.com/ekasetiawans/flutter_background_service/commit/76b0c3960e2e65b5be8c60a2de0b7c0565691769))
+ - **FIX**: manually disabling Alarms & reminders permission on Android 12 causes an exception when starting service on reboot. ([135fed1f](https://github.com/ekasetiawans/flutter_background_service/commit/135fed1f3a49b5c674718a112beb2ca71a19d1b0))
+
+
+## 2024-12-21
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
+ - [`flutter_background_service` - `v5.1.0`](#flutter_background_service---v510)
+ - [`flutter_background_service_android` - `v6.3.0`](#flutter_background_service_android---v630)
+
+---
+
+#### `flutter_background_service` - `v5.1.0`
+
+ - **FEAT**: remove unused imports. ([d0bbb433](https://github.com/ekasetiawans/flutter_background_service/commit/d0bbb43312877af51b5403c6fc42dd9ec2a44789))
+
+#### `flutter_background_service_android` - `v6.3.0`
+
+ - **FEAT**: remove unused imports. ([d0bbb433](https://github.com/ekasetiawans/flutter_background_service/commit/d0bbb43312877af51b5403c6fc42dd9ec2a44789))
+
+
+## 2024-12-21
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
+ - [`flutter_background_service` - `v5.1.0`](#flutter_background_service---v510)
+ - [`flutter_background_service_android` - `v6.3.0`](#flutter_background_service_android---v630)
+
+---
+
+#### `flutter_background_service` - `v5.1.0`
+
+ - **FEAT**: remove unused imports. ([d0bbb433](https://github.com/ekasetiawans/flutter_background_service/commit/d0bbb43312877af51b5403c6fc42dd9ec2a44789))
+
+#### `flutter_background_service_android` - `v6.3.0`
+
+ - **FEAT**: remove unused imports. ([d0bbb433](https://github.com/ekasetiawans/flutter_background_service/commit/d0bbb43312877af51b5403c6fc42dd9ec2a44789))
+
+
 ## 2024-08-29
 
 ### Changes

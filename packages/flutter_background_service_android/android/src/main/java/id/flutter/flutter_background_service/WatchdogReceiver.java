@@ -3,12 +3,14 @@ package id.flutter.flutter_background_service;
 import static android.content.Context.ALARM_SERVICE;
 import static android.os.Build.VERSION.SDK_INT;
 
+import android.Manifest;
+import android.app.ActivityManager;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
-import android.app.ActivityManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Build;
 
 import androidx.core.app.AlarmManagerCompat;
@@ -34,8 +36,15 @@ public class WatchdogReceiver extends BroadcastReceiver {
 
         PendingIntent pIntent = PendingIntent.getBroadcast(context, QUEUE_REQUEST_ID, intent, flags);
 
+        // On some vendored Android 12 (SDK 32) SCHEDULE_EXACT_ALARM permission might not be granted
+        // by default.
+        boolean isScheduleExactAlarmsGranted = true;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            isScheduleExactAlarmsGranted = manager.canScheduleExactAlarms();
+        }
+
         // Check is background service every 5 seconds
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU || !isScheduleExactAlarmsGranted) {
           // Android 13 (SDK 33) requires apps to declare android.permission.SCHEDULE_EXACT_ALARM to use setExact
           // Android 14 (SDK 34) takes this further and requires that apps explicitly ask for user permission before
           //   using setExact.
