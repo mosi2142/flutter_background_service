@@ -20,7 +20,7 @@ dependencies:
   flutter_background_service_android:
     git:
       url: https://github.com/mosi2142/flutter_background_service.git
-      ref: master
+      ref: new-update
       path: packages/flutter_background_service_android
 
   flutter_background_service_ios: ^5.0.3
